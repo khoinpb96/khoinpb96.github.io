@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     color: RGB(236, 232, 231);
+    scroll-behavior: smooth;
 
 
 }
@@ -14,10 +15,16 @@ body {
 }
 
 .icon {
-    width: 150px;
+    width: 100px;
 
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
 
 
 .nav-list {
@@ -25,6 +32,8 @@ body {
     list-style-type: none;
     justify-content: center;
     background: black;
+    position: fixed;
+    width: 100%;
 }
     
 .nav-btn a {
@@ -99,7 +108,9 @@ body {
 }
 
 
-.job , .edu{
+.job,
+.edu, 
+.skills {
     width: 60%;
     padding: 30px;
     background: #333;
@@ -108,6 +119,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    transition: .4s;
+}
+ 
+.job:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+}
+
+.edu:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
+
 }
 
 .date ,
@@ -134,4 +158,39 @@ body {
 .school {
     color :rgba(255,255,255,.3);
     font-size: 16px;
+}
+
+
+
+
+.skills-name {
+    border: 2px solid rgba(255,255,255,.3);
+    color:  rgba(255,255,255,.3);;
+    padding: 10px;
+    margin: 5px;
+    min-width: 90px;
+    border-radius: 6px;
+}
+
+.skills-name:hover {
+    border: 2px solid gold;
+    color: gold;
+    transition: color .7s , border .7s;
+    cursor: pointer;
+}
+
+.project {
+    width: 33.33%;
+    transition: .5s;
+
+}
+
+.project-pic {
+    width: 280px;
+    transition: .5s;
+}
+
+.project:hover {
+    transform: scale(1.03, 1.03);
+    cursor: pointer;
 }
