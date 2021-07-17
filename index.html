@@ -4,79 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bdc22b6131.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-  rel="stylesheet"/>
     <title>Bảo Khôi's Portfolio</title>
 </head>
 <body>
-    <!-- nav -->
-    <nav id="navbar">
-        <ul class="nav-list">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">About</a>
-            </li>
-        </ul>
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-btn"><a href="#">HOME</a></li>
+                <li class="nav-btn"><a href="#about">ABOUT</a></li>
+                <li class="nav-btn"><a href="#resume">RESUME</a></li>
+                <li class="nav-btn"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="nav-btn"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </nav>
-    <!-- nav -->
 
-    <!-- header -->
-    <section id="welcome-section">
-        <h1>Welcome to my Portfolio</h1>
-    </section>
-    <!-- header -->
-    <!-- projects -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div id="projects-grid">
-            <a href="https://codepen.io/kh-i-the-decoder/full/yLbVNvG" target="_blank">
-                <img src="#" alt="Chadwick Boseman">
-                <p class="project-tile">Tribute Page</p>
-            </a>
-            <a href="https://codepen.io/kh-i-the-decoder/full/eYWgZQX" target="_blank">
-                <img src="#" alt="Survey Form">
-                <p class="project-tile">Survey Form</p>
-            </a>
-            <a href="#">
-                <img src="#" alt="">
-                <p class="project-tile">Landing Page</p>
-            </a>
+    <header>
+        <div class="banner">
+            <div><img src="./assets/img/ava1.jpg" class="avatar" alt="Bảo Khôi"></div>
+            
+            <div class="intro">
+                <h1 class="intro-title">Nguyễn Phước Bảo Khôi</h1>
+                <p class="intro-sub-title">Front-end Developer Trainee</p>
+            </div>
         </div>
+    </header>
 
-        <a href="https://codepen.io/kh-i-the-decoder" class="show-all-btn" target="_blank">
-        Show all
-        </a>
-    </section>
-    <!-- projects -->
+    <main>
+        <section class="section" id="about">
+            <h1 class="section-title">ABOUT ME</h1>
+            <div class="about-text">
+                <p>3+ years experience in different industry such as Retail - Finance - Telecom Service,</p><p> I'm a team-worker, a fast-learner,</p><p>and at this time I am oriented to become a <strong>Front-end Developer</strong></p>          
+            </div>
+            
 
-    <!-- footer -->
-    <footer id="contact">
-        <div id="contact-section-header">
-            <p>Contact me</p>
-        </div>
-        <div id="contact-links">
-            <a href="https://facebook.com/khoinpb96" target="_blank" class="btn contact-details">
-                <i class="fab fa-facebook-square"></i> Facebook
-            </a>
-            <a href="https://khoinpb96.github.io/" id="profile-link" target="_blank" class="btn contact-details" >
-                <i class="fab fa-facebook-square"></i> Github
-            </a>
-            <a href="https://www.linkedin.com/in/nguyen-phuoc-bao-khoi/" target="_blank" class="btn contact-details">
-                <i class="fab fa-facebook-square"></i> LinkedIn
-            </a>
-        </div>
-        <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="nguyen-phuoc-bao-khoi" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://vn.linkedin.com/in/nguyen-phuoc-bao-khoi?trk=profile-badge">Nguyễn Phước Bảo Khôi</a></div> -->
+            
+        </section>       
+        <section class="section" id="resume">
+            <h1 class="section-title">RESUME</h1>
+                
+                <div class="col">
+                    <h2 class="h2-title">Education</h2>             
+                        <div class="detail">
+                            <div class="edu">
+                                <div class="info">
+                                    <span class="date"> <i class="far fa-calendar-alt"></i> Sep 2014 - Jul 2017</span>
+                                    <h3 class="name">Business Administration</h3>
+                                    <p class="school">GPA: 7.4/10</p>
+                                    <span class="school">Industrial University of Ho Chi Cinh city</span>
+                                </div>
+                                <div class="job-icon">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Logo_IUH.png" class="icon">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="col">
+                    <h2 class="h2-title">Experience</h2>
+                        <div class="detail">
+                            <div class="job">
+                                <div class="info">
+                                    <span class="date"> <i class="far fa-calendar-alt"></i> Jun 2021 - Present</span>
+                                    <h3 class="name">SEO Executive</h3>
+                                    <span class="school">ECO Pharma</span>
+                                </div>
+                                <div class="job-icon">
+                                    <img src="https://ecopharma.com.vn/system/cms/themes/default/img/logo.png" class="icon">
+                                </div>
+                            </div>
+                            <div class="job">
+                                <div class="info">
+                                    <span class="date"> <i class="far fa-calendar-alt"></i> Oct 2020 - March 2021</span>
+                                    <h3 class="name">Tellers</h3>
+                                    <span class="school">FPT Telecom</span>
+                                </div>
+                                <div class="job-icon">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/a/a2/FPT_Telecom_logo.svg" class="icon">
+                                </div>
+                            </div>
+                            <div class="job">
+                                <div class="info">
+                                    <span class="date"> <i class="far fa-calendar-alt"></i> Mar 2019 - Oct 2020</span>
+                                    <h3 class="name">Tellers</h3>
+                                    <span class="school">F88 Financial Service</span>
+                                </div>
+                                <div class="job-icon">
+                                    <img src="https://f88.vn/img/logo.svg" class="icon">
+                                </div>
+                            </div>
+                            <div class="job">
+                                <div class="info">
+                                    <span class="date"> <i class="far fa-calendar-alt"></i> Jul 2017 - Mar 2019</span>
+                                    <h3 class="name">Store Manager</h3>
+                                    <span class="school">Family Mart</span>
+                                </div>
+                                <div class="job-icon">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/FamilyMart_Logo_%282016-%29.svg/1280px-FamilyMart_Logo_%282016-%29.svg.png" class="icon">
+                                </div>
+                            </div>
+                        
+                        </div>
+                </div>
 
-    </footer>
+            
+        </section>
+        <section class="section" id="portfolio">
+            <h1 class="section-title">PORTFOLIO</h1>
+            
 
-    <!-- footer -->    
+            
+        </section>
+        <section class="section" id="contact">
+            <h1 class="section-title">CONTACT ME</h1>
+
+
+            
+        </section>
+    </main>
+
 </body>
 </html>
