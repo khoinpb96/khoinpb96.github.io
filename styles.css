@@ -298,22 +298,12 @@ h3.form-title {
 }
 
 @media (max-width: 480px) {
-    .row__contact {
-        flex-direction: column;
-    }
-    .col_contact {
-        width: 100%;
-    }
-    .skills {
-        padding: 24px; 
-        width: 80%;
-    }
-@media (max-width: 480px) {
     .nav {
         display: none;
     }
     .row__contact {
         flex-direction: column;
+        padding: 0;
     }
     .col_contact {
         width: 100% !important;
