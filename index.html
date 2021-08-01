@@ -12,7 +12,7 @@
     <title>Bảo Khôi's Portfolio</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="navbar">
         <div class="container">
             <ul class="nav-list">
                 <li class="nav-btn"><a href="#">HOME</a></li>
@@ -28,7 +28,7 @@
         <div class="banner">
             <div><img src="ava1.jpg" class="avatar" alt="Bảo Khôi"></div>
             
-            <div class="intro">
+            <div class="intro" id="welcome-section">
                 <h1 class="intro-title">Nguyễn Phước Bảo Khôi</h1>
                 <p class="intro-sub-title">Front-end Developer Trainee</p>
             </div>
@@ -127,14 +127,15 @@
                 </div>
             
         </section>
-        <section class="section" id="portfolio">
+        <section class="section" id="projects">
             <h1 class="section-title">PORTFOLIO</h1>
                 <div class="col">
-                    <h2 class="h2-title">WEB PROJECT</h2>
+                    <h2 class="h2-title project-tile">WEB PROJECT</h2>
                     <div class="row">
                         <div class="project">
                             <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
                             <p class="h3-title">Project1</p>
+                            <a href="https://khoinpb96.github.io/"></a>
                         </div>
                         <div class="project">
                             <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
@@ -144,20 +145,6 @@
                             <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
                             <p class="h3-title">Project3</p>
                         </div>    
-                    </div>
-                    <div class="row">
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project1</p>
-                        </div>
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project2</p>
-                        </div>
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project3</p>
-                        </div>
                     </div>
                 </div>
                 <div class="col">
@@ -176,26 +163,12 @@
                             <p class="h3-title">Project3</p>
                         </div>    
                     </div>
-                    <div class="row">
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project1</p>
-                        </div>
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project2</p>
-                        </div>
-                        <div class="project">
-                            <img src="https://thumbs.dreamstime.com/b/download-sign-load-icon-load-system-data-load-loading-bar-froze-computer-download-sign-load-icon-load-system-data-load-loading-bar-195106145.jpg" alt="" class="project-pic"></img>
-                            <p class="h3-title">Project3</p>
-                        </div>
-                    </div>
                 </div>
         </section>
         <section class="section" id="contact">
             <h1 class="section-title">CONTACT ME</h1>
-            <div class="row">
-                <div class="col_contact">
+            <div class="row__contact">
+                <div class="col_contact col_contact_1">
                     <div class="contact">
                         <i class="fas fa-map-marker-alt contact-icon"></i><p class="contact-text">Go Vap Dist, HCM City</p>
                     </div>
@@ -206,7 +179,7 @@
                         <i class="fas fa-envelope contact-icon"></i><p class="contact-text">khoinpb96@gmail.com</p>
                     </div>
                 </div>
-                <div class="col_contact">
+                <div class="col_contact col_contact_2">
                     <form class="message">
                         <h3 class="form-title">Leave me a message</h3>
                         <div class="form-group">
@@ -231,7 +204,7 @@
                 <div class="row">
                     <p class="copyright">Copyright © 2021 All rights reserved</p>
                 </div>
-                <div class="row">
+                <div class="row row__social">
                     <div class="col">
                         <a href="facebook.com/khoinpb96" class="social-item" target="_blank">
                             <i class="fab fa-facebook-f social-icon"></i>
@@ -248,7 +221,7 @@
                         </a>
                     </div>
                     <div class="col">
-                        <a href="https://github.com/khoinpb96/" class="social-item" target="_blank">
+                        <a href="https://github.com/khoinpb96/" class="social-item" id="profile-link" target="_blank">
                             <i class="fab fa-github-square social-icon"></i>
                         </a>
                     </div>
